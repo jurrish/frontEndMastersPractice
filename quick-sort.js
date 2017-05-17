@@ -17,7 +17,9 @@ const quickSort = (nums) => {
     }
   }
   //or
-  return quickSort(left).concat(pivot, quickSort(right));
+  let fullySorted = quickSort(left).concat(pivot, quickSort(right));
+  console.log(fullySorted);
+  return fullySorted;
   // return [...quickSort(left), pivot, ...quickSort(right)];
 };
 
