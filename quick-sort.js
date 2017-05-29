@@ -1,6 +1,6 @@
 'use strict';
 
-// let nums = [1,5,10,3, 7, 7, 9, 2];
+let nums = [1,5,10,3, 7, 7, 9, 2];
 //
 // const quickSort = (nums) => {
 //   if(nums.length <= 1) return nums;
@@ -27,7 +27,7 @@
 
 
 const quickSort = (nums) => {
-  if(nums.lengh <=1 ) return nums;
+  if(nums.length <=1 ) return nums;
   let pivot = nums[nums.length -1];
   let left = [];
   let right = [];
@@ -42,3 +42,5 @@ const quickSort = (nums) => {
   console.log(fullySorted);
   return fullySorted;
 };
+
+quickSort(nums);
